@@ -1,0 +1,25 @@
+.canvasHolder {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.UIHolder {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+    height: 200px;
+    width: 80%;
+}
+
+.CustomCursorHolder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* touch-action: none; */
+    pointer-events: none;
+}
