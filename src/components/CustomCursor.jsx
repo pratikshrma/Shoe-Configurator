@@ -27,7 +27,7 @@ const CustomCursor = () => {
                 <img src={'./cursor.png'} alt="" />
             </div>
             {hoverMaterialKey && <div className={style.hoverMaterialKey}>
-                {hoverMaterialKey}
+                {hoverMaterialKey ? hoverMaterialKey === "mesh" ? "body" : hoverMaterialKey : ""}
             </div>}
         </div>
     )

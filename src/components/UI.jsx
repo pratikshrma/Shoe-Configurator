@@ -15,18 +15,21 @@ const UI = () => {
             height: "100%",
             widows: "100%",
             display: "flex",
-            gap: "1em"
+            gap: "1em",
+            alignItems: "center",
+            flexDirection: 'column'
         }}>
             <HexColorPicker style={{
                 width: "300px",
-                height: "100%"
+                height: "100%",
+                cursor: 'none'
             }} color={color} onChange={(color) => setColor(color)} />
             <div
                 style={{
                     fontSize: "5rem",
                     fontFamily: 'satoshi'
                 }}
-            >{selectedMaterialKey ? selectedMaterialKey : ""}</div>
+            >{selectedMaterialKey ? selectedMaterialKey === "mesh" ? "body" : selectedMaterialKey : ""}</div>
 
         </div>
     )

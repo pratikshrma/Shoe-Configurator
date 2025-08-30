@@ -9,10 +9,9 @@
 .UIHolder {
     position: fixed;
     top: 10%;
-    left: 10%;
+    right: 10%;
     z-index: 1;
-    height: 200px;
-    width: 80%;
+    height: 300px;
 }
 
 .CustomCursorHolder {
@@ -20,6 +19,16 @@
     top: 0;
     left: 0;
     z-index: 2;
-    /* touch-action: none; */
     pointer-events: none;
+}
+
+.Heading {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+    pointer-events: none;
+    font-size: 4rem;
+    font-family: Satoshi;
+    max-width: 400px;
 }
