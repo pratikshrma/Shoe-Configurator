@@ -7,7 +7,7 @@ import { useFrame, useThree } from '@react-three/fiber'
 const ResponsiveModel = ({ children }) => {
     const { viewport } = useThree()
     const scale = useMemo(() => {
-        return Math.min(viewport.width / 6, 1.311)
+        return Math.min(viewport.width / 6, 0.461)
     }, [viewport.width])
 
     return <group scale={scale}>{children}</group>
@@ -60,6 +60,7 @@ const Experience = () => {
             <PresentationControls
                 global // controls the entire scene instead of a local group
                 polar={[-0.4, 0.8]} // vertical rotation limits (up/down)
+                speed={2.2}
             >
                 <ResponsiveModel>
                     <Float>
@@ -76,7 +77,7 @@ const Experience = () => {
                     </Float>
                 </ResponsiveModel>
             </PresentationControls>
-            <ContactShadows global opacity={1} scale={10} blur={8} far={10} position={[0, -2, 0]} resolution={256} color={'#dbc9c9'} />
+            <ContactShadows global opacity={1} scale={10} blur={5} position={[0, -1.0, 0]} resolution={256} color={'#dbc9c9'} />
         </>
     )
 }

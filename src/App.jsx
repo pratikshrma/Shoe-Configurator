@@ -26,7 +26,7 @@ const App = () => {
                 </div>
             }
             <div className={style.canvasHolder}>
-                <Canvas camera={{ position: [0, 0, 4], fov: 45 }} shadows>
+                <Canvas camera={{ position: [0, 0, 5], fov: 45 }} shadows>
                     <color args={["#eed8d8"]} attach={'background'} />
                     <Lights />
                     <Experience />
